@@ -45,7 +45,7 @@ def seed(canvas):
             canvas[i][j]=bool(random.getrandbits(1))
 
 def run(canvas):
-    ''' This  function runs the rules of game through all points, and changes their status accordingly.(in the same canvas)
+    ''' This  function runs the rules of game through all points, and changes their status accordingly.
     @Args:
     --
     canvas : canvas of population to run the rules on.
