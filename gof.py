@@ -50,8 +50,6 @@ def run(canvas):
     --
     canvas : canvas of population to run the rules on.
     @returns:
-    --
-    None
     '''
     canvas = np.array(canvas)
     next_gen_canvas = np.array(create_canvas(canvas.shape[0]))
@@ -97,7 +95,6 @@ if __name__=='__main__':
     if len(sys.argv) != 2: raise Exception(usage_doc)
    
     canvas_size = int(sys.argv[1])
-    # main working structure of this module.
     c=create_canvas(canvas_size)
     seed(c)
     fig, ax = plt.subplots()
